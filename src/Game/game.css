@@ -1,0 +1,125 @@
+:root {
+  --top-font: "san-serif";
+}
+
+.game-container {
+  display: grid;
+  grid-template-rows: 0.4fr 10px;
+  grid-gap: 200px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  height: 100vh;
+}
+
+.top-part {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid white;
+  min-width: 500px;
+  padding: 15px 30px 15px 20px;
+  border-radius: 10px;
+  font-family: var(--top-font);
+}
+
+.logo div {
+  font-size: 1.15rem;
+}
+
+.score-container {
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 5px 30px 0px 30px;
+  border-radius: 10px;
+}
+
+.score-name {
+  font-size: 1.5rem;
+  margin-bottom: -5px;
+}
+
+.score {
+  height: 80px;
+  margin-top: -10px;
+  font-size: 4rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.score-separator {
+  padding-bottom: 12px;
+}
+
+.bottom-part {
+  display: flex;
+  justify-content: center;
+}
+
+.symbol {
+  margin: 0 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.89);
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  border: 10px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.symbol:nth-child(1) {
+  border-color: red;
+  transition: 0.2s;
+}
+
+.symbol:nth-child(1):hover {
+  border-color: rgba(255, 0, 0, 0.742);
+}
+
+.symbol:nth-child(2) {
+  border-color: rgb(255, 196, 0);
+  transition: 0.2s;
+}
+
+.symbol:nth-child(2):hover {
+  border-color: rgba(255, 196, 0, 0.75);
+}
+
+.symbol:nth-child(3) {
+  border-color: rgb(74, 74, 255);
+  transition: 0.2s;
+}
+
+.symbol:nth-child(3):hover {
+  border-color: rgba(74, 74, 255, 0.75);
+}
+
+.is-chosen {
+  width: 100px;
+  height: 100px;
+  border-radius: 80px;
+  transition: 2s;
+}
+
+.info {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  grid-template-rows: 60px 5px;
+}
+
+.winner {
+  font-size: 1.8rem;
+}
+
+.play-again button {
+  padding: 3px 13px;
+  font-weight: 600;
+}
